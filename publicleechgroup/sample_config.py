@@ -48,7 +48,7 @@ class Config:
     # default thumbnail to be used in the videos
     DEF_THUMB_NAIL_VID_S = get_config(
         "DEF_THUMB_NAIL_VID_S",
-        "https://telegra.ph/file/8b973b270f4f380a427b1.png"
+        ""
     )
     # maximum message length in Telegram
     MAX_MESSAGE_LENGTH = int(get_config(
@@ -85,7 +85,7 @@ class Config:
     # URL for the rclone configuration
     R_CLONE_CONF_URI = get_config("R_CLONE_CONF_URI", None)
     # Destination folder for the rclone
-    R_CLONE_DEST = get_config("R_CLONE_DEST", "/PublicLeech")
+    R_CLONE_DEST = get_config("R_CLONE_DEST", "/Untitled")
     # because, https://t.me/c/1494623325/5603
     SHOULD_USE_BUTTONS = get_config("SHOULD_USE_BUTTONS", False)
     #
