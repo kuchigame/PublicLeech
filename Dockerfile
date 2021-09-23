@@ -16,7 +16,7 @@
 #  along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 #  creates a layer from the base Docker image.
-FROM python:3.9.5-slim-buster
+FROM python:3.9.7-slim-buster
 
 WORKDIR /app
 
@@ -31,7 +31,7 @@ ENV LANG C.UTF-8
 ENV DEBIAN_FRONTEND noninteractive
 
 # sets the TimeZone, to be used inside the container
-ENV TZ Asia/Kolkata
+ENV TZ Asia/Jakarta
 
 # fix "ephimeral" / "AWS" file-systems
 RUN sed -i.bak 's/us-west-2\.ec2\.//' /etc/apt/sources.list
