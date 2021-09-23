@@ -88,8 +88,8 @@ RUN apt -qq install -y --no-install-recommends \
 COPY . .
 
 # install requirements, inside the container
-RUN pip3 install --upgrade pip && \
-    pip3 install --no-cache-dir -r requirements.txt
+RUN pip3 install --user --upgrade pip && \
+    pip3 install --user --no-cache-dir -r requirements.txt
 
 # specifies what command to run within the container.
 CMD ["python3", "-m", "publicleechgroup"]
